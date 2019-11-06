@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title> Charlie's Cafe</title>
+        <!--Make sure to put web font link tag here-->
+        <link rel="stylesheet" href="https://use.typekit.net/orc0ugd.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    </head>
+    
+<!--top navigation bar. maybe try displaying as grid too?-->
+    <nav>
+        <ul>
+            <li class="header"> Charlie's Cafe</li>
+            <li><img class="burger" src="img/CloseButton.png" alt="Close Menu"></li>
+            <li id="home" class="dropitem"> Home</li>
+            <li id="menu" class="dropitem">Menu</li>
+            <li id="location" class="dropitem">Location</li>
+        </ul>
+    </nav>
+<!--Maybe put column items in a list like the menu items?-->
+    <div class="column1">
+        <h2 class="intro"> Enjoy coffee on the go with Charlie's! Try our Fall Specials today! </h2>
+        <h4> Hours </h4>
+        <p class="hours"> Monday-Thursday: 7 am-7pm </p>
+        <p class="hours"> Fridays: 7am-4pm </p>
+    </div>
+<!--replace with larger image and then display as flex-->
+    <img id="coffee" src="img/CharliesCoffeeCup2.jpg" atl="Coffee on Your Time" />
+
+    <h1>Charlie's Cafe</h1>
+    
+    <body>
+        <h2> Menu </h2>
+<!--all drink from hot to cold and additions. Each inside one of two columns. prices are displayed as grids-->
+        <div class="drinks">
+<!--hot drink information-->
+            <div class="column1">
+                    <ul>
+                        <li>
+                            <h3 id="hot drinks"> Hot Drinks</h3>
+                        </li>
+                        <li>
+                            <p class="product"> Drip Coffee </p>
+                            <p class="small">$1.95</p>
+                            <p class="medium">$2.25</p>
+                            <p class="large">$2.50</p>
+                        </li>
+                        <li>
+                            <p class="product"> Espresso </p>
+                            <p class="small"> $1.95 </p>
+                            <p class="medium"> $2.50 </p>
+                            <p class="large"> $3.00 </p>
+                        </li>
+                        <li>
+                            <p class="product"> Machiato </p>
+                            <p class="small"> $2.00 </p>
+                            <p class="medium"> $2.50 </p>
+                            <p class="large"> $3.25 </p>
+                        </li>
+                        <li>
+                            <p class="product"> Americano </p>
+                            <p class="small"> $2.00</p>
+                            <p class="medium"> $2.50</p>
+                            <p class="large"> $3.25</p>
+                        </li>
+                        <li>
+                            <p class="product"> Cappuccino </p>
+                            <p class="small"> $2.95 </p>
+                            <p class="medium"> $3.50 </p>
+                            <p class="large"> $4.25 </p>
+                        </li>
+                        <li>
+                            <p class="product"> Caffe Latte </p>
+                            <p class="small"> $3.25 </p>
+                            <p class="medium"> $3.75 </p>
+                            <p class="large"> $4.50 </p>
+                        </li>
+                        <li>
+                            <p class="product"> Caffe Mocha </p>
+                            <p class="small"> $3.25 </p>
+                            <p class="medium"> $4.00 </p>
+                            <p class="large"> $4.75 </p>
+                        </li>
+                        <li>
+                            <p class="product"> Hot Chocolate </p>
+                            <p class="small"> $2.75 </p>
+                            <p class="medium"> $3.25 </p>
+                            <p class="large"> $3.95 </p>
+                        </li>
+                        <li>
+                            <p class="product"> Hot Chocolate </p>
+                            <p class="small"> $2.75 </p>
+                            <p class="medium"> $3.25 </p>
+                            <p class="large"> $3.95 </p>
+                        </li>
+                        <li>
+                            <p class="product"> Chai Latte </p>
+                            <p class="small"> $2.75 </p>
+                            <p class="medium"> $3.95 </p>
+                            <p class="large"> $4.25 </p>
+                        </li>
+                    </ul>
+                </div>
+<!--tea information-->
+            <div class="column2">
+                <ul>
+                    <li>
+                        <h3 class="product"> Organic Tea </h3>
+                        <p class="small">$2.50</p>
+                    </li>
+                    <li>
+                        <p> Gunpowder Green </p>
+                    </li>
+                    <li>      
+                        <p> Aged Earl Grey </p>
+                    </li>
+                    <li>
+                        <p> Chamomile </p>
+                    </li>
+                    <li>
+                        <p> Jasmine Green </p>
+                    </li>
+                    <li> 
+                        <p> Golden Chai </p>
+                    </li>
+                    <li>
+                        <p> Mint (Herbal) </p>
+                    </li>
+                    <li>                 
+                        <p> Mate Lemon </p>
+                    </li>
+                    <li>
+                        <p> Breakfast Blend </p>
+                    </li>
+                    <li>
+                        <p> Silver and Spice </p>
+                    </li>
+                    <li>
+                        <p> Raspberry Pomegranate </p>
+                    </li>
+                    <li>
+                        <p> Lemon Ginger </p>
+                    </li>
+                </ul>
+            </div>
+<!--iced drink information-->
+            <div class="column1">
+                <ul>
+                    <li>
+                        <h3 id="iced drinks"> Iced Drinks </h3>
+                    </li>
+                    <li>
+                        <p class="product"> Coffee </p>
+                        <p class="filler">-</p>
+                        <p class="medium">$2.70</p>
+                        <p class="filler">-</p>
+                    </li>
+                    <li>
+                        <p class="product"> Americano </p>
+                        <p class="small">$2.00</p>
+                        <p class="medium">$2.50</p>
+                        <p class="large">$3.25</p>
+                    </li>
+                    <li>
+                        <p class="product"> Latte </p>
+                        <p class="small">$3.25</p>
+                        <p class="medium">$3.75</p>
+                        <p class="large">$4.50</p>
+                    </li>
+                    <li>
+                        <p class="product"> Mocha </p>
+                        <p class="small">$3.25</p>
+                        <p class="medium">$3.95</p>
+                        <p class="large">$4.25</p>
+                    </li>
+                    <li>
+                        <p class="product"> Chai </p>
+                        <p class="small">$3.25</p>
+                        <p class="medium">$3.95</p>
+                        <p class="large">4.25</p>
+                    </li>
+                    <li>
+                        <p class="product"> Chai </p>
+                        <p class="small">$3.25</p>
+                        <p class="medium">$3.95</p>
+                        <p class="large">4.25</p>
+                    </li>
+                    <li>
+                        <p class="product"> Mocha Frappe </p>
+                        <p class="filler">-</p>
+                        <p class="medium">$4.25</p>
+                        <p class="large">$5.00</p>
+                    </li>
+                    <li>
+                        <p class="product"> Thai Cappuccino </p>
+                        <p class="filler">-</p>
+                        <p class="medium">$4.00</p>
+                        <p class="filler">-</p>
+
+                    </li>
+                    <li>
+                        <p class="product"> Thai Tea </p>
+                        <p class="filler">-</p>
+                        <p class="medium">$3.25</p>
+                        <p class="filler">-</p>
+                    </li>
+                    <li>
+                        <p class="product"> Iced Tea </p>
+                        <p class="filler">-</p>
+                        <p class="medium">$2.50</p>
+                        <p class="large">$2.75</p>
+                    </li>
+                </ul>
+                </div>
+<!--additions-->
+            <div class="column2">
+                <ul>
+                    <li>
+                        <h3 id="additions"> Additions </h3>
+                    </li>
+                    <li>
+                        <p class="product"> Almond Milk </p>
+                        <p class="price">$0.75</p>
+                    </li>
+                    <li>
+                        <p class="product"> Flax Milk </p>
+                        <p class="price">$0.75</p>
+                    </li>
+                    <li>
+                        <p class="product"> Soy Milk </p>
+                        <p class="price">0.75</p>
+                    </li>
+                    <li>
+                        <p class="product"> Emergen-C </p>
+                        <p class="price">$1.00</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+<!--panini information-->
+        <div class="panini1">
+            <h3 class="product"> Paninis </h3>
+            <p class="paniniprice">$6.95</p>
+            <h4> Italiano </h4>
+                <p> Grilled baguette with prosciutto, mozzarella, sliced tomato, basil pesto, and a touch of balsamic vinegar </p>
+            <h4> Seville </h4>
+                <p> Grilled baguette with Spanish chorizo, mozzarella, sliced tomato, roasted red pepper, sun dried tomato pesto and a touch of balsamic vinegar </p>
+            <h4> Milano </h4>
+                <p> Grilled baguette with prosciutto, salami, ham, mozzarella, sliced tomato, pepperoncini, basil pesto, and a touch of balsamic vinegar </p>
+            <h4> Caprese </h4>
+                <p> Grilled baguette with mozzarella, sliced tomato, fresh basil (when available), basil pesto, and a touch of balsamic vinegar </p>
+        </div>
+        <div class="panini2">
+            <h4> Turkey </h4>
+                <p> Sliced turkey, tomato, spinach, mozzarella cheese with basil pesto and a drizzle of balsamic on baguette </p>
+            <h4> Vegetarian </h4>
+                <p> Grilled ciabatta bread with mozzarella, feta cheese, roasted red peppers, marinated artichoke, tomato, red onion, and finished with basil pesto </p>
+            <h4> Mediterrnean Chicken </h4>
+                <p> Grilled ciabatta bread with spiced chicken breast, mozzarella, roasted red peppers, sliced tomato and sun dried tomato pesto </p>
+        </div>
+<!--pastry information-->
+        <div class="pastry1">
+                <ul>
+                    <li>
+                        <h3>Pastries</h3>
+                        <p class="price"></p>
+                    </li>
+                    <li>
+                        <p>Croissant</p>
+                        <p class="price">$1.30</p>
+                    </li>
+                    <li>
+                        <p>Chocolate Croissant</p>
+                        <p class="price">$1.30</p>
+                    </li>
+                    <li>
+                        <p>Strawberry Croissant</p>
+                        <p class="price">$1.30</p>
+                    </li>
+                    <li>
+                        <p>Blueberry Muffin</p>
+                        <p class="price">$1.30</p>
+                    </li>
+                    <li>
+                        <p>Chocolate Muffin</p>
+                        <p class="price">$1.30</p>
+                    </li>
+                    <li>
+                        <p> Whole Wheat Bagel</p>
+                        <p class="price">$1.30</p>
+                    </li>
+                    <li>
+                        <p> Blueberry Bagel </p>
+                        <p class="price">$1.30</p>
+                    </li>
+                </ul>
+        </div>
+        <div class="pastry2">
+                <ul>
+                    <li>
+                        <p> Cinnamon Raisin Bagel </p>
+                        <p class="price">$1.30</p>
+                    </li>
+                    <li>
+                        <p> Cinnamon Raisin Bagel </p>
+                        <p class="price">$1.30</p>
+                    </li>
+                    <li>
+                        <p> Ham and Swiss Croisant </p>
+                        <p class="price">$1.30</p>
+                    </li>
+                    <li>
+                        <p> Chocolate Chip Cookie </p>
+                        <p class="price">$1.30</p>
+                    </li>
+                    <li>
+                        <p> Brownie </p>
+                        <p class="price">$1.00</p>
+                    </li>
+                    <li>
+                        <p> Lemon Bar </p>
+                        <p class="price">$1.10</p>
+                    </li>
+                </ul>
+            </div>
+<!--Location information-->
+        <div class="column2">
+            <h2 id="location"> Location </h2>
+            <h4> Charlie's Cafe Design North </h4>
+            <p> Design North, Right of Entrance 200-298 E Tyler St Tempe, AZ 85281 </p>
+        </div>
+<!--map for location-->
+        <div class="column1">
+            <img id="map" src="img/CharliesMap.png" alt="Find Us Here!" />
+        </div>
+    </body>
+    
+</html>

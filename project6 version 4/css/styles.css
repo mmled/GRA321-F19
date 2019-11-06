@@ -1,0 +1,238 @@
+/* Styles for Starter Project  */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    color: #707070;
+    font-family: objektiv-mk1, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 30px;
+    margin-top: 80px;
+}
+
+#coffee {
+    display: flex;
+}
+
+.container1, .container2, .container3, .container4, .container5 {
+    padding; 3rem;
+}
+
+.dropitem {
+    grid-area: d;
+}
+
+.filler {
+    color:white;
+}
+
+/* display as none at mobile since I have an h1 for that and .header goes in the navigation bar of the website. change display in media query */
+
+#header {
+    display: none;
+    visibility: hidden;
+}
+
+h1 {
+    background-color: #A69F7C;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin:0;
+    padding: 20px;
+}
+
+h2 {
+    font-family: objektiv-mk1, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #8F6D3F;
+    padding: 0px 0px 0px 160px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-family: objektiv-mk1, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #A69F7C;
+}
+
+h4 {
+   font-family: objektiv-mk1, sans-serif;
+   font-weight: 35 pts;
+   font-style: normal;
+   color: #8F6D3F;
+}
+
+img {
+    max-width: 100%;
+}
+
+#intro {
+    color:black;
+    padding: 0px 0px 0px 0px;
+    color: #707070;
+}
+
+.large {
+  grid-area: l;
+}
+
+li {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 3.25fr 1fr 1fr 1fr;
+  padding: 1rem;
+  width: 100%;
+  grid-template-areas:
+      "product s m l";
+}
+
+#map {
+    display: flex;
+    margin-top: 25px;
+}
+
+.medium {
+  grid-area: m;
+}
+
+nav {
+    background-color: #D6D496;
+    color: white;
+    padding: 0px 0px 0px 0px;
+    position: fixed;
+    top: 85px;
+    left:0;
+}
+
+nav li {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem;
+    width: 100%;
+    grid-template-areas: 
+        "d"
+        "d"
+        "d";
+}
+
+nav ul {
+    list-style: none;
+}
+
+.product {
+  grid-area: product;
+}
+
+.small {
+  grid-area: s;
+}
+
+.small, .medium, .large, .price {
+    color: #8F6D3F;
+}
+
+ul {
+  width: 100%;
+}
+
+/* when screen is atleast 680px or more, website will display as desktop, image will flex */
+@media screen and (min-width: 680px) {
+
+    #coffee {
+        margin-top: 55px;
+    }
+
+    .container1, .container2, .container5 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3rem;
+    }
+
+    .container3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;   
+    }
+
+    .container4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    h1 {
+        visibility: hidden;
+    }
+
+    li {
+       display: grid;
+       grid-gap: 1rem;
+       grid-template-areas: 
+         "product product"
+         "s m l .";
+       grid-template-columns: .75fr .25fr .25fr .25fr;
+       padding: 1rem;
+       width: 100%;
+    }
+
+    #map {
+        margin-bottom: 200px;
+    }
+    
+    #menu-body{
+        margin-top: 100px;
+        margin-left: 500px;
+    }
+    
+    #panini2 {
+        margin-top: 87px;
+    }
+
+    #pastry2 {
+        margin-top: 95px; 
+    }
+
+    /* stuff for the nav bar for desktop*/
+    #header {
+        visibility: visible;
+    }
+
+    #home {
+          margin-left: auto;
+    }
+
+    nav {
+        align-items: center;
+        background-color: #A69F7C;
+        color: black;
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav img {
+            display: none;
+    }
+
+    nav li {
+       padding: .25rem;
+        color: white;
+    }
+}

@@ -1,0 +1,244 @@
+/* Styles for Starter Project  */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    color: #707070;
+    font-family: objektiv-mk1, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 30px;
+    margin-top: 80px;
+}
+
+#coffee {
+    display: flex;
+    padding-left: 5%;
+    padding-top: 4%;
+}
+
+.column1, .column2, .panini1, .panini2, .pastry1, .pastry2 {
+    float:left;
+    width: 100%;
+}
+
+/* .dropitems are the home, menu, and location items in the top navigation bar */
+.dropitem {
+    padding: 0px 0px 0px 0px;
+}
+
+.filler {
+    color:white;
+}
+
+/* display as none at mobile since I have an h1 for that and .header goes in the navigation bar of the website. change display in media query */
+.header {
+    display: none;
+}
+
+h1 {
+    background-color: #A69F7C;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    }
+
+h2 {
+    font-family: objektiv-mk1, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #8F6D3F;
+    padding: 0px 0px 0px 160px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-family: objektiv-mk1, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #A69F7C;
+}
+
+h4 {
+   font-family: objektiv-mk1, sans-serif;
+   font-weight: 35 pts;
+   font-style: normal;
+   color: #8F6D3F;
+}
+
+img {
+    max-width: 100%;
+}
+
+.intro {
+    color:black;
+    padding: 0px 0px 0px 0px;
+    color: #707070;
+}
+
+.large {
+  grid-area: l;
+}
+
+li {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 3.25fr 1fr 1fr 1fr;
+  padding: 1rem;
+  width: 100%;
+  grid-template-areas:
+      "product s m l";
+}
+
+#location {
+    
+}
+
+#map {
+    display: flex;
+    margin-top: 25px;
+
+}
+
+.medium {
+  grid-area: m;
+}
+
+nav {
+    background-color: #D6D496;
+    color: white;
+    padding: 0px 70px 0px 0px;
+    position: fixed;
+    text-align: left;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.product {
+  grid-area: product;
+}
+
+.small {
+  grid-area: s;
+}
+
+.small, .medium, .large, .price {
+    color: #8F6D3F;
+}
+
+ul {
+  width: 100%;
+}
+
+/* when screen is atleast 680px or more, website will display as desktop, image will flex */
+@media screen and (min-width: 680px) {
+.column1, .column2 {
+    float:left;
+    width:40%
+}
+    
+.column1, .column2:after {
+    content: "";
+    display: table;
+    clear:both;
+}
+    
+.header {
+    align-items: center;
+    background-color: transparent;
+    color: black;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    justify-content: flex-start;
+}
+    
+h1 {
+    display: none;
+}
+    
+li {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas: 
+    "product product"
+    "s m l .";
+  grid-template-columns: .75fr .25fr .25fr .25fr;
+  padding: 1rem;
+  width: 100%;
+}
+    
+#map {
+    margin-bottom: 200px;
+}
+    
+nav {
+    align-items: center;
+    background-color: white;
+    color: black;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    justify-content: flex-end;
+}
+
+nav * {
+    display: inline;
+}
+    
+nav img {
+        display: none;
+}
+
+nav li {
+    margin: 0px;
+    margin-left: 10%;
+}
+    
+.panini1, .panini2 {
+    float:left;
+    width:40%
+}
+    
+.panini1, .panini2:after {
+    content: "";
+    display: table;
+    clear:both;
+}
+    
+.panini2 {
+    margin-top: 83px;
+}
+    
+.pastry1, .pastry2 {
+    float:left;
+    width:40%
+}
+    
+.pastry2 {
+    margin-top: 95px;
+}
+    
+.pastry1, .pastry2:after {
+    content: "";
+    display: table;
+    clear:both;
+}
+}
+.column2, .panini2 {
+    margin-left: 10%;
+}

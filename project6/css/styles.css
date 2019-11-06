@@ -1,0 +1,94 @@
+/* Styles for Starter Project  */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: objektiv-mk1, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.coffee {
+    padding: 250px 0px 0px 100px;
+}
+
+h1 {
+    background-color: #A69F7C;
+    padding: 25px;
+}
+
+h2 {
+    font-family: objektiv-mk1, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #8F6D3F;
+}
+
+h3 {
+    font-family: objektiv-mk1, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #A69F7C;
+}
+
+h4 {
+   font-family: objektiv-mk1, sans-serif;
+   font-weight: 35 pts;
+   font-style: normal;
+   color: #8F6D3F;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas: 
+    "product product product product"
+    "s m l .";
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  padding: 1rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 680px) {
+  li {
+    grid-template-areas:
+      "product s m l";
+  }
+}
+
+nav {
+    background-color: #D6D496;
+    position: absolute;
+    top: 90px; 
+    padding: 60px 50px 150px 20px;
+    margin-top: 26px;
+    color: white;
+}
+
+.product {
+  grid-area: product;
+}
+
+.small {
+  grid-area: s;
+}
+
+.medium {
+  grid-area: m;
+}
+
+.large {
+  grid-area: l;
+}
+
+ul {
+    width: 100%;
+}
+
+
